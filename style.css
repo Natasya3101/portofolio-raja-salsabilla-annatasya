@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 30%; 
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #333;
+}
+
+.title {
+    padding: 5px;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.portfolio {
+    width: 100%; 
+    height: auto;
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+
+.skills {
+    margin: 20px 0;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.skills h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skills p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.skills-box .skill-box {
+    margin-bottom: 10px;
+}
+
+.contact {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.contact h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.contact a {
+    color: blue;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.my-portfolio h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap; /* Responsif untuk kolom saat layar lebih kecil */
+    margin-bottom: 40px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Menyesuaikan ukuran kolom */
+    padding: 10px;
+    gap: 5px;
+}
+
+.project-img {
+    width: 100%;
+    height: auto; 
+    margin: 10px 0;
+    object-fit: cover; /* Gambar memenuhi area dengan rasio aspek yang sesuai */
+}
+
+.project-details {
+    padding: 20px;
+    width: 50%;
+}
+
+.project-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.project-details a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+.tech-stack {
+    margin: 10px 0; /* Mengurangi margin bawah untuk memperbaiki spacing */
+}
+
+.tech {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 5px 10px; /* Kurangi padding agar sesuai dengan contoh */
+    border-radius: 5px;
+    margin: 5px; /* Berikan jarak margin yang lebih kecil dan seragam */
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column; /* Membuat project tumpuk saat di layar kecil */
+    }
+
+    .project-images, .project-details {
+        width: 100%;
+    }
+}
