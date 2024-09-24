@@ -91,7 +91,7 @@ h2 {
 .skill-box {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    padding: 8px 12px;
+    padding: 8px 10px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold;
@@ -215,9 +215,7 @@ h2 {
         width: 100%;
     }
 }
-/* Existing styles remain unchanged */
 
-/* Responsive for smaller screens */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -240,16 +238,20 @@ h2 {
     }
 
     .skills-box {
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        font-size: 12px;
     }
+
 
     .portfolio {
         padding: 15px;
     }
 
     .project {
-        flex-direction: column; /* Stack projects vertically */
-        margin-bottom: 20px; /* Reduce spacing */
+        flex-direction: column; 
+        margin-bottom: 20px; 
     }
 
     .project-images, .project-details {
@@ -286,7 +288,7 @@ h2 {
     }
 }
 
-/* Additional responsiveness for very small screens (e.g., mobile phones) */
+
 @media (max-width: 480px) {
     body {
         margin: 10px;
@@ -306,8 +308,10 @@ h2 {
     }
 
     .skills-box {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px; 
+        font-size: 12px;
+
     }
 
     .project-details p {
