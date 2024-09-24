@@ -26,7 +26,7 @@ body {
 
 .sidebar {
     width: 30%; 
-    background-color: gray;
+    background-color: #788ab2;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -213,5 +213,120 @@ h2 {
 
     .project-images, .project-details {
         width: 100%;
+    }
+}
+/* Existing styles remain unchanged */
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .title, .skills h3, .contact h3 {
+        font-size: 16px;
+    }
+
+    .skills-box {
+        justify-content: center;
+    }
+
+    .portfolio {
+        padding: 15px;
+    }
+
+    .project {
+        flex-direction: column; /* Stack projects vertically */
+        margin-bottom: 20px; /* Reduce spacing */
+    }
+
+    .project-images, .project-details {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .project-img {
+        margin: 5px 0;
+    }
+
+    .tech-stack {
+        margin: 5px 0;
+    }
+
+    .tech {
+        margin: 3px;
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .contact {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    .contact p, .contact a {
+        font-size: 14px;
+    }
+}
+
+/* Additional responsiveness for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    .container {
+        margin: 5px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .skills-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-details p {
+        font-size: 14px;
+    }
+
+    .tech {
+        font-size: 12px;
+    }
+
+    .project-images {
+        padding: 10px;
+    }
+
+    .project-details {
+        padding: 10px;
+    }
+
+    .description {
+        font-size: 14px;
     }
 }
