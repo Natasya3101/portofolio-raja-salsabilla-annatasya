@@ -1,67 +1,46 @@
+/* General reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
+  
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 20px;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 20px;
 }
-
-.container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.sidebar {
-    width: 30%; 
-    background-color: #788ab2;
-    padding: 20px;
+  
+/* Header */
+.main-header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.profile {
+    align-items: center;
     text-align: center;
-}
+    margin: 10 0px;
 
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ddd;
+}
+  
+.profile {
+    margin: 20px;
+}
+  
 .profile-img {
     width: 150px;
     height: 150px;
     border-radius: 10%;
-    margin-bottom: 15px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 h2 {
     font-size: 16px;
     color: #333;
 }
-
-.title {
-    padding: 5px;
-    font-size: 18px;
-    color:  white;
-    margin-bottom: 20px;
-}
-
-.portfolio {
-    width: 100%; 
-    height: auto;
-    padding: 20px;
-    background-color: #fafafa;
-}
-
 
 .skills {
     margin: 20px 0;
@@ -74,7 +53,6 @@ h2 {
     color: #333;
     margin-bottom: 10px;
 }
-
 .skills p {
     margin-bottom: 10px;
     font-size: 16px;
@@ -85,10 +63,11 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .skill-box {
-    background-color: #f0f0f0;
+    background-color: #fffdfd;
     border: 1px solid #ccc;
     padding: 8px 10px;
     border-radius: 5px;
@@ -101,47 +80,56 @@ h2 {
     margin-bottom: 10px;
 }
 
-.contact {
-    margin-top: auto;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
+/* Navigation Menu */
+.nav-menu {
+    margin-top: 20px;
+    /* background-color: aliceblue; */
 }
 
-.contact h3 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
-
-.contact p {
-    margin-bottom: 8px;
-    font-size: 16px;
-}
-
-.contact a {
-    color: blue;
+  
+.nav-menu ul li a {
     text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-
-
-
-.my-portfolio h2 {
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: bold;
     color: #333;
-    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+  
+.nav-menu ul li a:hover {
+    color: gray;
+}
+  
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+   
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 0; /* Remove margin */
+}
+  
+.section h3 {
+    font-size: 1.5rem;
 }
 
+/* Portfolio Section */
+.portfolio {
+    width: 100%;
+    /* max-width: 1200px; */
+    /* background-color: #fff; */
+
+}
+  
 .project {
     display: flex;
     flex-wrap: wrap; /* Responsif untuk kolom saat layar lebih kecil */
-    margin-bottom: 40px; 
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 40px;  */
+    box-shadow: 0 2px 2px rgba(240, 238, 238, 0.1);
     overflow: hidden;
 }
 
@@ -157,9 +145,9 @@ h2 {
     width: 100%;
     height: auto; 
     margin: 10px 0;
-    object-fit: cover; /* Gambar memenuhi area dengan rasio aspek yang sesuai */
+    object-fit: cover; 
 }
-
+  
 .project-details {
     padding: 20px;
     width: 50%;
@@ -167,7 +155,7 @@ h2 {
 
 .project-details p {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 13px;
     color: #333;
 }
 
@@ -202,114 +190,49 @@ h2 {
     margin-top: 10px;
     color: #555;
 }
+.contact {
+    margin: auto;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    background-color: #f5f5f5;
 
-/* Responsif */
-@media (max-width: 768px) {
-    .project {
-        flex-direction: column; /* Membuat project tumpuk saat di layar kecil */
-    }
-
-    .project-images, .project-details {
-        width: 100%;
-    }
 }
 
+.contact h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.contact a {
+    color: blue;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration:underline;
+}
+/* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    .project {
         flex-direction: column;
-        margin: 10px;
     }
 
-    .sidebar {
+    .project-images,
+    .project-details {
         width: 100%;
         padding: 15px;
-        text-align: center;
-    }
-
-    .profile-img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .title, .skills h3, .contact h3 {
-        font-size: 16px;
-    }
-
-    .skills-box {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        font-size: 12px;
-    }
-
-
-    .portfolio {
-        padding: 15px;
-    }
-
-    .project {
-        flex-direction: column; 
-        margin-bottom: 20px; 
-    }
-
-    .project-images, .project-details {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .project-img {
-        margin: 5px 0;
-    }
-
-    .tech-stack {
-        margin: 5px 0;
-    }
-
-    .tech {
-        margin: 3px;
-        font-size: 12px;
-        padding: 5px 8px;
-    }
-
-    .description {
-        font-size: 14px;
-        margin-top: 5px;
-    }
-
-    .contact {
-        margin-top: 20px;
-        padding-top: 15px;
-    }
-
-    .contact p, .contact a {
-        font-size: 14px;
     }
 }
-
 
 @media (max-width: 480px) {
     body {
         margin: 10px;
-    }
-
-    .container {
-        margin: 5px;
-    }
-
-    .profile-img {
-        width: 80px;
-        height: 80px;
-    }
-
-    h2 {
-        font-size: 14px;
-    }
-
-    .skills-box {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 6px; 
-        font-size: 12px;
-
     }
 
     .project-details p {
@@ -318,17 +241,5 @@ h2 {
 
     .tech {
         font-size: 12px;
-    }
-
-    .project-images {
-        padding: 10px;
-    }
-
-    .project-details {
-        padding: 10px;
-    }
-
-    .description {
-        font-size: 14px;
     }
 }
