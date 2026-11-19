@@ -1,218 +1,704 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raja Salsabilla Annatasya | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="content-wrapper">
-    <!-- Header Section -->
-    <header class="main-header">
-        <nav class="nav-menu">
-            <ul>
-              <li><a href="#profile">Profile</a></li>
-              <li><a href="#project">Project</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-      <div class="profile">
-        <img src="images/saya2 (2).jpg" alt="Profile Picture" class="profile-img">
-        <h2>RAJA SALSABILLA ANNATASYA</h2>
-        <h4 class="title">
-          Junior Developer | Backend Developer | Frontend Developer | Web Developer
-        </h4>
-        <p>
-          I am a final semester student of the D3 Informatics Management program, with proficiency in several programming languages and frameworks, particularly Node.js and React.js.
-        </p>
-        <div class="skills">
-            <h3>Skills</h3>
-            <p><strong>Hard Skills:</strong></p>
-            <div class="skills-box">
-                <span class="skill-box">HTML</span>
-                <span class="skill-box">CSS</span>
-                <span class="skill-box">JavaScript</span>
-                <span class="skill-box">Java</span>
-                <span class="skill-box">Node.js</span>
-                <span class="skill-box">C</span>
-                <span class="skill-box">SpringBoot</span>
-                <span class="skill-box">Express</span>
-                <span class="skill-box">React.js</span>
-                <span class="skill-box">TailwindCSS</span>
-                <span class="skill-box">Vite</span>
-                <span class="skill-box">MySQL</span>
-                <span class="skill-box">PostgreSQL</span>
-            </div>
+<div class="content-wrapper">
 
-            <p><strong>Soft Skills:</strong></p>
-            <div class="skills-box">
-                <span class="skill-box">High Responsibility</span>
-                <span class="skill-box">Time Management</span>
-                <span class="skill-box">Effective Communication</span>
-                <span class="skill-box">Teamwork</span>
-            </div>
 
-            <p><strong>Software Skills:</strong></p>
-            <div class="skills-box">
-                <span class="skill-box">SQLyog</span>
-                <span class="skill-box">XAMPP</span>
-                <span class="skill-box">Git</span>
-                <span class="skill-box">GitHub</span>
-                <span class="skill-box">VS Code</span>
-                <span class="skill-box">Microsoft Word</span>
-                <span class="skill-box">Microsoft Excel</span>
-                <span class="skill-box">Microsoft PowerPoint</span>
-            </div>
-        </div>
+    <!-- WINDOWS 95 INTRO SCREEN -->
+    <div class="retro-intro" id="retroIntro">
+
+      <div class="intro-desktop">
+
+          <div class="desktop-top">
+              <span>RSA_PORTFOLIO.EXE</span>
+              <span>© 2026 DIGITAL WORLD</span>
+          </div>
+
+          <div class="intro-main">
+
+              <div class="intro-left">
+
+                  <span class="yellow-label">
+                      WELCOME TO MY SPACE!
+                  </span>
+
+                  <h1>
+                      HELLO,<br>
+                      INTERNET<br>
+                      EXPLORER!
+                  </h1>
+
+                  <div class="webcore-word">
+                      WEBCORE
+                  </div>
+
+                  <p>
+                      A LITTLE PLACE<br>
+                      ON THE INTERNET ♡
+                  </p>
+
+                  <div class="intro-tags">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JAVASCRIPT</span>
+                  </div>
+
+              </div>
+
+              <div class="intro-right">
+                  <img src="images/saya2 (2).jpg" alt="Profile">
+                  <span class="photo-label">USER: NATASYA</span>
+              </div>
+
+          </div>
+
+          <div class="intro-bottom">
+              <span>✦ PERSONAL PORTFOLIO ✦</span>
+              <span>WELCOME TO MY DIGITAL WORLD!</span>
+          </div>
+
       </div>
-      
+
+
+      <!-- INSTRUCTION -->
+      <div class="click-instruction" id="clickInstruction">
+          <span class="instruction-icon">!</span>
+          <div>
+              <strong>ATTENTION, USER!</strong>
+              <p>
+                  Please click the OK button 3 times
+                  to enter my portfolio.
+              </p>
+          </div>
+      </div>
+
+
+      <!-- ERROR POPUPS -->
+      <div class="error-stack" id="errorStack">
+
+          <!-- POPUP 1 -->
+          <div class="error-window">
+              <div class="error-title">
+                  <span>Error</span>
+                  <span class="close-icon">×</span>
+              </div>
+
+              <div class="error-content">
+                  <span class="error-symbol">!</span>
+                  <p>Something went wrong.</p>
+              </div>
+
+              <button class="error-ok">OK</button>
+          </div>
+
+
+          <!-- POPUP 2 -->
+          <div class="error-window">
+              <div class="error-title">
+                  <span>Error</span>
+                  <span class="close-icon">×</span>
+              </div>
+
+              <div class="error-content">
+                  <span class="error-symbol">!</span>
+                  <p>Oops! Try again.</p>
+              </div>
+
+              <button class="error-ok">OK</button>
+          </div>
+
+
+          <!-- POPUP 3 -->
+          <div class="error-window">
+              <div class="error-title">
+                  <span>Error</span>
+                  <span class="close-icon">×</span>
+              </div>
+
+              <div class="error-content">
+                  <span class="error-symbol">!</span>
+                  <p>Almost there. Ready to enter?</p>
+              </div>
+
+              <button class="error-ok">OK</button>
+          </div>
+
+      </div>
+
+
+      <!-- COUNTER -->
+      <div class="intro-counter" id="introCounter">
+          ERROR 03 / 03
+      </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <header class="main-header" id="profile">
+        <nav class="nav-menu">
+            <div class="nav-logo">RSA.exe</div>
+
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- PROFILE -->
+        <section class="profile">
+            <div class="profile-window">
+                <div class="window-bar">
+                    <span>profile.exe</span>
+                    <div class="window-controls">
+                        <i></i><i></i><i></i>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-image-wrapper">
+                        <img src="images/saya2 (2).jpg"
+                             alt="Raja Salsabilla Annatasya"
+                             class="profile-img">
+                        <span class="image-sticker">HELLO!</span>
+                    </div>
+
+                    <div class="profile-info">
+                        <p class="eyebrow">WELCOME TO MY DIGITAL SPACE ♡</p>
+
+                        <h1>RAJA SALSABILLA ANATASYA</h1>
+
+                        <h3 class="title">Junior Web Developer</h3>
+
+                        <p class="profile-description">
+                            Junior Web Developer with a Diploma (D3) in
+                            Informatics Management and hands-on experience
+                            in JavaScript, React.js, Vue.js, Node.js, and
+                            Java Spring Boot. Interested in building
+                            functional web applications, REST APIs,
+                            and database-driven systems.
+                        </p>
+
+                        <div class="profile-buttons">
+                            <a href="#project" class="main-button">
+                                Explore Projects ↗
+                            </a>
+
+                            <a href="https://github.com/Natasya3101"
+                               target="_blank"
+                               class="secondary-button">
+                                GitHub ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="window-footer">
+                    <span>LOCATION: BANDUNG, INDONESIA</span>
+                    <span>STATUS: OPEN TO OPPORTUNITIES</span>
+                </div>
+            </div>
+        </section>
     </header>
 
-    <!-- Portfolio Section -->
-    <main class="portfolio" id="project">
-      <section class="my-portfolio">
-        <h2>My Project</h2>
-        
-        <div class="project">
-          <div class="project-images">
-            <img src="images/news.png" alt="Projeckan HTML" class="project-img">
-          </div>
-          <div class="project-details">
-            <p><strong>Web News</strong></p>
-            <div class="tech-stack">
-              <span class="tech">HTML</span>
-              <span class="tech">CSS</span>
-              <span class="tech">JavaScript</span>
-              <span class="tech">API</span>
+    <main>
 
+        <!-- ABOUT -->
+        <section class="about-section">
+            <div class="section-heading">
+                <span class="section-number">01 / ABOUT</span>
+                <h2>A Little About Me</h2>
             </div>
-            <p class="description">A news website that provides up-to-date news is an online platform designed to deliver the latest and most accurate information across various topics to its audience in real-time.</p>
-            <p><a href="https://github.com/Natasya3101/Projeckan-HTML.git" target="_blank">Visit Project</a></p>
-          </div>
-        </div>
-        
-        <div class="project">
-            <div class="project-images">
-                <img src="/images/clothes2.png" alt="Admin Baby Clothes 2" class="project-img">
-            </div>
-            <div class="project-details">
-                <p><strong>Web Admin Store</strong></p>
-                <div class="tech-stack">
-                    <span class="tech">Node.js</span>
-                    <span class="tech">Express.js</span>
-                    <span class="tech">JavaScript</span>
-                    <span class="tech">CSS</span>
-                    <span class="tech">Mariadb</span>
 
+            <div class="about-window">
+                <div class="window-bar">
+                    <span>about_me.txt</span>
+                    <div class="window-controls">
+                        <i></i><i></i><i></i>
+                    </div>
                 </div>
-                <p class="description">An admin management project for baby clothes, with full CRUD operations.</p>
+
+                <div class="about-content">
+                    <p>
+                        I am a graduate of the Diploma (D3) in Informatics
+                        Management program at PASIM National University,
+                        with a GPA of 3.50/4.00.
+                    </p>
+
+                    <p>
+                        I have experience developing admin web applications
+                        and REST APIs using React.js, Vue.js, Node.js,
+                        Express.js, and Java Spring Boot. I also have
+                        experience teaching C programming, algorithms,
+                        and data structures through a scholarship program.
+                    </p>
+
+                    <p>
+                        I enjoy learning new technologies, solving problems,
+                        and developing web applications that are useful
+                        and easy to use.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills-section" id="skills">
+            <div class="section-heading">
+                <span class="section-number">02 / SKILLS</span>
+                <h2>My Toolkit</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-window">
+                    <div class="window-bar">
+                        <span>frontend.skills</span>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Frontend Development</h3>
+                        <div class="skills-box">
+                            <span class="skill-box">HTML</span>
+                            <span class="skill-box">CSS</span>
+                            <span class="skill-box">JavaScript</span>
+                            <span class="skill-box">React.js</span>
+                            <span class="skill-box">Vue.js</span>
+                            <span class="skill-box">Tailwind CSS</span>
+                            <span class="skill-box">Bootstrap</span>
+                            <span class="skill-box">Vite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-window">
+                    <div class="window-bar">
+                        <span>backend.skills</span>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Backend Development</h3>
+                        <div class="skills-box">
+                            <span class="skill-box">Node.js</span>
+                            <span class="skill-box">Express.js</span>
+                            <span class="skill-box">Java</span>
+                            <span class="skill-box">Spring Boot</span>
+                            <span class="skill-box">Spring Security</span>
+                            <span class="skill-box">REST API</span>
+                            <span class="skill-box">C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-window">
+                    <div class="window-bar">
+                        <span>database.skills</span>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Database</h3>
+                        <div class="skills-box">
+                            <span class="skill-box">MySQL</span>
+                            <span class="skill-box">PostgreSQL</span>
+                            <span class="skill-box">Firebase</span>
+                            <span class="skill-box">Firestore</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-window">
+                    <div class="window-bar">
+                        <span>tools.skills</span>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Tools & Software</h3>
+                        <div class="skills-box">
+                            <span class="skill-box">Git</span>
+                            <span class="skill-box">GitHub</span>
+                            <span class="skill-box">Postman</span>
+                            <span class="skill-box">SQLyog</span>
+                            <span class="skill-box">XAMPP</span>
+                            <span class="skill-box">VS Code</span>
+                            <span class="skill-box">Microsoft Office</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="education-section">
+            <div class="section-heading">
+                <span class="section-number">03 / EDUCATION</span>
+                <h2>Education</h2>
+            </div>
+
+            <div class="education-window">
+                <div class="window-bar">
+                    <span>education.log</span>
+                </div>
+
+                <div class="education-content">
+                    <span class="date-label">SEP 2022 — OCT 2025</span>
+                    <h3>PASIM National University</h3>
+                    <p>Diploma (D3) in Informatics Management</p>
+                    <p class="education-gpa">GPA: 3.50 / 4.00</p>
+                    <span class="location-label">Bandung, Indonesia</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="experience-section">
+            <div class="section-heading">
+                <span class="section-number">04 / EXPERIENCE</span>
+                <h2>Teaching Experience</h2>
+            </div>
+
+            <div class="experience-window">
+                <div class="window-bar">
+                    <span>experience.log</span>
+                </div>
+
+                <div class="experience-content">
+                    <span class="date-label">SEP 2023 — 2024</span>
+                    <h3>Programming Instructor</h3>
+                    <p>PASIM National University · PUB Scholarship Program</p>
+
+                    <ul>
+                        <li>
+                            Taught C programming fundamentals, including
+                            syntax, data types, control flow, functions,
+                            and pointers.
+                        </li>
+                        <li>
+                            Taught algorithms and logic, along with basic
+                            data structures such as arrays, stacks, queues,
+                            and linked lists.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="my-portfolio" id="project">
+            <div class="section-heading">
+                <span class="section-number">05 / SELECTED WORKS</span>
+                <h2>My Projects</h2>
+                <p>A collection of projects I have worked on.</p>
+            </div>
+
+            <div class="project-grid">
+
+                <!-- PROJECT 01: TA RESTORAN -->
                 
-                <p><a href="https://github.com/Natasya3101/Raja-Salsabilla-Annatasya_Admin-Baby-Clothes.git" target="_blank">Visit Project</a></p>
-            </div>
-        </div>
+<!-- PROJECT 01: TA RESTORAN -->
+<article class="project featured-project">
 
-        <!-- Project 3: Kingstore React -->
-        <div class="project">
-            <div class="project-images">
-                <img src="images/ks.png" alt="Kingstore React 2" class="project-img">
-            </div>
-            <div class="project-details">
-                <p><strong>Kingstore</strong></p>
-                <div class="tech-stack">
-                    <span class="tech">ReactJs</span>
-                    <span class="tech">Node</span>
-                    <span class="tech">Express</span>
-                    <span class="tech">JavaScript</span>
-                    <span class="tech">TailwindCSS</span>
-                    <span class="tech">Mysql</span>
-                    
-                </div>
-                <p class="description">An e-commerce platform built using React.js, featuring product management where admins can manage products and categories. </p>
+    <div class="restaurant-slider">
+
+        <div class="restaurant-slides">
+          <img src="images/restaurant-tables.png"
+                 alt="Restaurant Table Selection">
+            <img src="images/restaurant-order.png"
+                 alt="Restaurant Ordering Page">
+
+            <img src="images/restaurant-login.png"
+                 alt="Restaurant Login Page">
+
+            <img src="images/restaurant-dashboard.png"
+                 alt="Restaurant Owner Dashboard">
+
             
-                <p><a href="https://github.com/Natasya3101/uas-react-kingstore.git" target="_blank">Visit Project</a></p>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-images">
-                <img src="images/ts.png" alt="Kingstore React 2" class="project-img">
-            </div>
-            <div class="project-details">
-                <p><strong>Manage Data Employee</strong></p>
-                <div class="tech-stack">
-                    <span class="tech">React</span>
-                    <span class="tech">Typescript</span>
-                    <span class="tech">Java</span>
-                    <span class="tech">TailwindCSS</span>
-                    
-                </div>
-                <p class="description">Using React.ts with full CRUD operations. </p>
-                
-                <p><a href="" target="_blank">Visit Project</a></p>
-            </div>
         </div>
 
-        <div class="project">
-            <div class="project-images">
-                <img src="images/app.png" alt="Kingstore React 2" class="project-img">
-            </div>
-            <div class="project-details">
-                <p><strong>Aplication Data Karyawan</strong></p>
-                <div class="tech-stack">
-                    <span class="tech">HTML</span>
-                    <span class="tech">CSS</span>
-                    <span class="tech">JavaScript</span>
-                    <span class="tech">Boostrap</span>
-                    <span class="tech">Thymeleaf</span>
-                    <span class="tech">Java</span>
-                    <span class="tech">SpringBoot</span>
-                    <span class="tech">MVC</span>
-                    <span class="tech">MySQL</span>
-                    
-                    
-                </div>
-                <p class="description">This employee management application provides an interface for adding, editing, deleting, and searching for employee data. The user can perform CRUD (Create, Read, Update, Delete) operations and easily search for employees by NIK (Employee Identification Number) or name. </p>
-                
-                <p><a href="https://github.com/Natasya3101/Aplication-Data-Karyawan.git" target="_blank">Visit Project</a></p>
-            </div>
-        </div>
-        <!-- Project 4: JnK Parfumaria -->
-        <div class="project">
-            <div class="project-images">
-                <!-- <img src="images/jnk.png" alt="JnK Parfumaria 1" class="project-img"> -->
-                <img src="images/jnk2.png" alt="JnK Parfumaria 2" class="project-img">
-            </div>
-            <div class="project-details">
-                <p><strong>JnK Parfumaria</strong></p>
-                <div class="tech-stack">
-                    <span class="tech">ReactJs</span>
-                    <span class="tech">JavaScript</span>
-                    <span class="tech">TailwindCSS</span>
-                    <span class="tech">Java</span>
-                    <span class="tech">Springboot</span>
-                    <span class="tech">SpringSecurity</span>
-                    <span class="tech">Mysql</span>
-                    <span class="tech">Mariadb</span>
+        <span class="project-index">FINAL PROJECT</span>
 
-                    
+        <span class="swipe-hint">← SWIPE TO EXPLORE →</span>
+    </div>
 
-                </div>
-                <p class="description">An e-commerce project for selling perfumes, built with React and Java.</p>
-                
-                <p><a href="https://github.com/Natasya3101/JnK-parfumaria.git" target="_blank">Visit Project</a></p>
-            </div>
+    <div class="project-details">
+
+        <h3>Restaurant Ordering System</h3>
+
+        <div class="tech-stack">
+            <span class="tech">Node.js</span>
+            <span class="tech">Vue.js</span>
+            <span class="tech">Express.js</span>
+            <span class="tech">MySQL</span>
         </div>
-      </section>
+
+        <p class="description">
+            A web-based restaurant ordering and management system
+            developed as a final project. The application supports
+            customer, owner, cashier, and kitchen staff roles.
+            Features include dine-in and take-away ordering,
+            menu and table management, order monitoring,
+            transactions, and sales reports.
+        </p>
+
+        <a class="project-link"
+           href="https://github.com/Natasya3101/TA-Restoran"
+           target="_blank">
+            View on GitHub ↗
+        </a>
+
+    </div>
+</article>
+
+
+                <!-- PROJECT 02: WEB NEWS -->
+                <article class="project">
+                    <div class="project-image-wrapper">
+                        <img src="images/news.png" alt="Web News" class="project-img">
+                        <span class="project-index">PROJECT</span>
+                    </div>
+
+                    <div class="project-details">
+                        <h3>Web News</h3>
+
+                        <div class="tech-stack">
+                            <span class="tech">HTML</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">API</span>
+                        </div>
+
+                        <p class="description">
+                            A news website that provides up-to-date news
+                            and information across various topics through
+                            an online platform.
+                        </p>
+
+                        <a class="project-link"
+                           href="https://github.com/Natasya3101/Projeckan-HTML"
+                           target="_blank">
+                            View on GitHub ↗
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 03: WEB ADMIN STORE -->
+                <article class="project">
+                    <div class="project-image-wrapper">
+                        <img src="images/clothes2.png" alt="Web Admin Store" class="project-img">
+                        <span class="project-index">PROJECT</span>
+                    </div>
+
+                    <div class="project-details">
+                        <h3>Web Admin Store</h3>
+
+                        <div class="tech-stack">
+                            <span class="tech">Node.js</span>
+                            <span class="tech">Express.js</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">MariaDB</span>
+                        </div>
+
+                        <p class="description">
+                            An admin management application for a baby
+                            clothing store, featuring product management
+                            and CRUD operations.
+                        </p>
+
+                        <a class="project-link"
+                           href="https://github.com/Natasya3101/Raja-Salsabilla-Annatasya_Admin-Baby-Clothes"
+                           target="_blank">
+                            View on GitHub ↗
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 04: KINGSTORE -->
+                <article class="project">
+                    <div class="project-image-wrapper">
+                        <img src="images/ks.png" alt="Kingstore" class="project-img">
+                        <span class="project-index">PROJECT</span>
+                    </div>
+
+                    <div class="project-details">
+                        <h3>Kingstore</h3>
+
+                        <div class="tech-stack">
+                            <span class="tech">React.js</span>
+                            <span class="tech">Node.js</span>
+                            <span class="tech">Express.js</span>
+                            <span class="tech">Tailwind CSS</span>
+                            <span class="tech">MySQL</span>
+                        </div>
+
+                        <p class="description">
+                            An e-commerce admin application built with
+                            React.js and Express.js, featuring product
+                            and category management.
+                        </p>
+
+                        <a class="project-link"
+                           href="https://github.com/Natasya3101/uas-react-kingstore"
+                           target="_blank">
+                            View on GitHub ↗
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 05: MANAGE DATA EMPLOYEE -->
+                <article class="project">
+                    <div class="project-image-wrapper">
+                        <img src="images/ts.png" alt="Manage Data Employee" class="project-img">
+                        <span class="project-index">PROJECT</span>
+                    </div>
+
+                    <div class="project-details">
+                        <h3>Manage Data Employee</h3>
+
+                        <div class="tech-stack">
+                            <span class="tech">React</span>
+                            <span class="tech">TypeScript</span>
+                            <span class="tech">Java</span>
+                            <span class="tech">Tailwind CSS</span>
+                        </div>
+
+                        <p class="description">
+                            An employee data management project built with
+                            React and TypeScript, featuring CRUD operations.
+                        </p>
+
+                        <a class="project-link"
+                           href="https://github.com/Natasya3101?tab=repositories"
+                           target="_blank">
+                            Find Repository ↗
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 06: APPLICATION DATA KARYAWAN -->
+                <article class="project">
+                    <div class="project-image-wrapper">
+                        <img src="images/app.png" alt="Application Data Karyawan" class="project-img">
+                        <span class="project-index">PROJECT</span>
+                    </div>
+
+                    <div class="project-details">
+                        <h3>Application Data Karyawan</h3>
+
+                        <div class="tech-stack">
+                            <span class="tech">HTML</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Bootstrap</span>
+                            <span class="tech">Thymeleaf</span>
+                            <span class="tech">Java</span>
+                            <span class="tech">Spring Boot</span>
+                            <span class="tech">MySQL</span>
+                        </div>
+
+                        <p class="description">
+                            An employee management application that allows
+                            users to add, edit, delete, and search employee
+                            records by NIK or name.
+                        </p>
+
+                        <a class="project-link"
+                           href="https://github.com/Natasya3101/Aplication-Data-Karyawan"
+                           target="_blank">
+                            View on GitHub ↗
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 07: JNK PARFUMARIA -->
+                <article class="project">
+                    <div class="project-image-wrapper">
+                        <img src="images/jnk2.png" alt="JnK Parfumaria" class="project-img">
+                        <span class="project-index">PROJECT</span>
+                    </div>
+
+                    <div class="project-details">
+                        <h3>JnK Parfumaria</h3>
+
+                        <div class="tech-stack">
+                            <span class="tech">React.js</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Tailwind CSS</span>
+                            <span class="tech">Java</span>
+                            <span class="tech">Spring Boot</span>
+                            <span class="tech">Spring Security</span>
+                            <span class="tech">MySQL</span>
+                        </div>
+
+                        <p class="description">
+                            An admin web application for a perfume store,
+                            built with React.js and Java Spring Boot,
+                            with admin authentication secured by
+                            Spring Security.
+                        </p>
+
+                        <a class="project-link"
+                           href="https://github.com/Natasya3101/JnK-parfumaria"
+                           target="_blank">
+                            View on GitHub ↗
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <footer class="contact" id="contact">
+            <div class="section-heading">
+                <span class="section-number">06 / GET IN TOUCH</span>
+                <h2>Let's Connect!</h2>
+            </div>
+
+            <div class="contact-window">
+                <div class="window-bar">
+                    <span>contact.exe</span>
+                    <div class="window-controls">
+                        <i></i><i></i><i></i>
+                    </div>
+                </div>
+
+                <div class="contact-content">
+                    <p>
+                        Have a project or opportunity in mind?
+                        Feel free to reach out.
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:rajaannatasya@gmail.com">Email ↗</a>
+                        <a href="https://wa.me/6282169806388" target="_blank">WhatsApp ↗</a>
+                        <a href="https://www.linkedin.com/in/raja-salsabilla-annatasya-4ba647320"
+                           target="_blank">LinkedIn ↗</a>
+                        <a href="https://github.com/Natasya3101"
+                           target="_blank">GitHub ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="copyright">
+                © 2026 Raja Salsabilla Annatasya · Made with ♡
+            </p>
+        </footer>
+
     </main>
-
-    <!-- Contact Section -->
-    <footer class="contact" id="contact">
-        <h3>Contact</h3>
-        <p><a href="mailto:rajaannatasya@gmail.com">Email</a></p>
-        <p><a href="https://wa.me/+6282169806388"/>WhatsApp</p>
-        <p><a href="https://www.linkedin.com/in/raja-salsabilla-annatasya-4ba647320" target="_blank">LinkedIn</a></p>
-        <p><a href="https://github.com/Natasya3101" target="_blank">GitHub</a></p>
-    </footer>
-  </div>
+</div>
+<script src="script.js"></script>
+</body>
 </body>
 </html>
